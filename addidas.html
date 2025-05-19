@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Addidas Collection | Sports</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nike.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-left">
+          <button class="menu-button" id="menuButton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+          <a href="./index.html" class="logo" style="color: white;">NIKE</a>
+        </div>
+        
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li><a href="./men.html" class="nav-link">Men</a></li>
+            <li><a href="./women.html" class="nav-link">Women</a></li>
+            <li><a href="./kids.html" class="nav-link">Kids</a></li>
+            <li><a href="#" class="nav-link">Collections</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-right">
+          <button class="icon-button" id="searchButton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+          <button class="icon-button" style="position: relative;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <div class="search-header">
+        <input type="text" class="search-input" placeholder="Search products..." id="searchInput">
+        <button class="close-search" id="closeSearch">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="trending-searches">
+        <h3>Trending Searches</h3>
+        <div class="trending-tags">
+          <span>Air Max</span>
+          <span>Jordan</span>
+          <span>Running</span>
+          <span>Training</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="products-main">
+    <div class="container">
+      <div class="products-layout">
+        <!-- Filters Sidebar -->
+        <aside class="filters-sidebar" id="filtersSidebar">
+          <div class="filters-header">
+            <h2>Filters</h2>
+            <button class="close-filters" id="closeFilters">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+
+          <div class="filter-group">
+            <h3>Category</h3>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="category" value="running">
+                Running Shoes
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="category" value="basketball">
+                Basketball Shoes
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="category" value="lifestyle">
+                Lifestyle Shoes
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="category" value="training">
+                Training Shoes
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Product Type</h3>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="type" value="airmax">
+               Addidas Men
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="type" value="jordan">
+                Addidas Women
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="type" value="tshirts">
+               Addidas NEW
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="type" value="shorts">
+                Addidas Trending
+              </label>
+             
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Price Range</h3>
+            <div class="price-range">
+              <input type="range" id="priceRange" min="0" max="300" step="10" value="150">
+              <div class="price-inputs">
+                <input type="number" id="minPrice" value="0" min="0" max="300">
+                <span>-</span>
+                <input type="number" id="maxPrice" value="150" min="0" max="300">
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Products Grid -->
+        <div class="products-content">
+          <div class="products-header">
+            <button class="filter-toggle" id="filterToggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></svg>
+              Filters
+            </button>
+            <div class="products-sort">
+              <label for="sort">Sort by:</label>
+              <select id="sort" class="sort-select">
+                <option value="featured">Featured</option>
+                <option value="newest">Newest</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="products-grid" id="productsGrid">
+            <!-- Products will be dynamically added here -->
+          </div>
+
+          <div class="load-more">
+            <button class="load-more-button" id="loadMore">Load More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to get special offers, free giveaways, and new releases.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">Running</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Basketball</a></li>
+            <li><a href="#">Football</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Nike. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="addidas.js"></script>
+</body>
+</html>

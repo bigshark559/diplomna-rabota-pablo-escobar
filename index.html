@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Sports</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <div class="search-header">
+        <input type="text" class="search-input" placeholder="Search products..." id="searchInput">
+        <button class="close-search" id="closeSearch">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="trending-searches">
+        <h3>Trending Searches</h3>
+        <div class="trending-tags">
+          <span>Boxing Gloves</span>
+          <span>Running Shoes</span>
+          <span>Swimming Gear</span>
+          <span>Workout Sets</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-left">
+          <button class="menu-button" id="menuButton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+          <div class="logo">NIKE</div>
+        </div>
+        
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li><a href="./boxing.html" class="nav-link">Boxing</a></li>
+            <li><a href="./running.html" class="nav-link">Running</a></li>
+            <li><a href="./swiming.html" class="nav-link">Swimming</a></li>
+            <li><a href="./wrestling.html" class="nav-link">Wrestling</a></li>
+            <li><a href="./football.html" class="nav-link">Football</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-right">
+          <button class="icon-button" id="searchButton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+          <button class="icon-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-media">
+      <img 
+        src="" 
+        alt="Nike Shoe"
+        class="hero-image"
+      >
+    </div>
+    
+    <div class="hero-content">
+      <div class="hero-text-wrapper">
+        <h1 class="hero-title">
+          <span data-text="Break">Break</span>
+          <span data-text="Through">Through</span>
+        </h1>
+        <p class="hero-description">
+          Redefine Your Limits
+        </p>
+      </div>
+    </div>
+
+    <div class="brand-scroll">
+      <div class="brand-scroll-content">
+        <span class="brand-text">NIKE</span>
+        <span class="brand-text">JORDAN</span>
+        <span class="brand-text">ACG</span>
+        <span class="brand-text">NIKE SB</span>
+        <span class="brand-text">NIKE</span>
+        <span class="brand-text">JORDAN</span>
+        <span class="brand-text">ACG</span>
+        <span class="brand-text">NIKE SB</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sports">
+    <div class="container">
+      <h2 class="section-title">Explore Sports</h2>
+      <div class="sports-slider">
+        <button class="slider-arrow prev" id="prevSlide">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 18-6-6 6-6"/>
+          </svg>
+        </button>
+        <div class="sports-track" id="sportsTrack">
+          <a href="./boxing.html" class="sport-card">
+            <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&q=80&w=800" alt="Boxing">
+            <div class="sport-content">
+              <h3>Boxing</h3>
+              <p>Premium gear for champions</p>
+              <div class="sport-categories">
+                <span>Gloves</span>
+                <span>Shorts</span>
+                <span>Protection</span>
+              </div>
+            </div>
+          </a>
+          <a href="./running.html" class="sport-card">
+            <img src="https://www.shape.com/thmb/gn764xBNb7RU8sSXdl3_Fr0XEww=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/running-longer-or-faster-31e97070bda14ffc8afdea52094504c7.jpg" alt="Running">
+            <div class="sport-content">
+              <h3>Running</h3>
+              <p>Break your limits</p>
+              <div class="sport-categories">
+                <span>Shoes</span>
+                <span>Apparel</span>
+                <span>Accessories</span>
+              </div>
+            </div>
+          </a>
+          <a href="./swiming.html" class="sport-card">
+            <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&q=80&w=800" alt="Swimming">
+            <div class="sport-content">
+              <h3>Swimming</h3>
+              <p>Engineered for speed</p>
+              <div class="sport-categories">
+                <span>Suits</span>
+                <span>Goggles</span>
+                <span>Equipment</span>
+              </div>
+            </div>
+          </a>
+          <a href="wrestling.html" class="sport-card">
+            <img src="https://hawkeyesports.com/imgproxy/8xGHME9dYSGdb3jjDAS6RUx4wfW_N_MkZxWScubfa4g/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2hhd2tleWVzcG9ydHMtcHJvZC8yMDI1LzAzLzIxL2tnWTBVdVYwUGY1SWNvUzFmNHlZeW5XOVB1aUVUYnhjM2cyM0xMV1IuanBn.jpg" alt="Wrestling">
+            <div class="sport-content">
+              <h3>Wrestling</h3>
+              <p>Dominate the mat</p>
+              <div class="sport-categories">
+                <span>Singlets</span>
+                <span>Shoes</span>
+                <span>Training</span>
+              </div>
+            </div>
+          </a>
+          <a href="football.html" class="sport-card">
+            <img src="https://img.freepik.com/free-photo/doing-sport-concept_23-2151937746.jpg" alt="Basketball">
+            <div class="sport-content">
+              <h3>Football</h3>
+              <p>Elevate your game</p>
+              <div class="sport-categories">
+                <span>Shoes</span>
+                <span>Jerseys</span>
+                <span>Accessories</span>
+              </div>
+            </div>
+          </a>
+         
+        </div>
+        <button class="slider-arrow next" id="nextSlide">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <section class="featured-brands">
+    <div class="container">
+      <!-- Nike Section -->
+      <div class="brand-section">
+        <div class="brand-header">
+          <h2 class="section-title">Nike</h2>
+          <a href="nike.html" class="view-all">View All</a>
+        </div>
+        <div class="product-slider">
+          <button class="slider-arrow prev" id="prevNike">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="product-track" id="nikeTrack">
+            <div class="product-card">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=600" alt="Nike Air Max">
+              <div class="product-info">
+                <h3>Nike Air Max</h3>
+                <p>Running Shoes</p>
+                <span class="price">$129.99</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&q=80&w=600" alt="Nike Zoom">
+              <div class="product-info">
+                <h3>Nike Zoom</h3>
+                <p>Training Shoes</p>
+                <span class="price">$149.99</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80&w=600" alt="Nike React">
+              <div class="product-info">
+                <h3>Nike React</h3>
+                <p>Lifestyle Shoes</p>
+                <span class="price">$139.99</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?auto=format&fit=crop&q=80&w=600" alt="Nike Air Force">
+              <div class="product-info">
+                <h3>Nike Air Force</h3>
+                <p>Casual Shoes</p>
+                <span class="price">$119.99</span>
+              </div>
+            </div>
+          </div>
+          <button class="slider-arrow next" id="nextNike">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Adidas Section -->
+      <div class="brand-section">
+        <div class="brand-header">
+          <h2 class="section-title">Adidas</h2>
+          <a href="./addidas.html" class="view-all">View All</a>
+        </div>
+        <div class="product-slider">
+          <button class="slider-arrow prev" id="prevAdidas">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="product-track" id="adidasTrack">
+            <div class="product-card">
+              <img src="https://cdn.etrias.nl/media/cache/product_thumb_md/a/d/adidas-unisex-sl-72-rs-magic-beige-pure-ruby-sand-strata-js0749.jpg" alt="Adidas Ultraboost">
+              <div class="product-info">
+                <h3>Adidas Ultraboost</h3>
+                <p>Running Shoes</p>
+                <span class="price">$179.99</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https://cdn.etrias.nl/media/cache/product_zoom/a/d/adidas-women-samba-og-shadow-brown-powder-yellow-gum-3-jr8167.jpg" alt="Adidas Superstar">
+              <div class="product-info">
+                <h3>Adidas Superstar</h3>
+                <p>Casual Shoes</p>
+                <span class="price">$89.99</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https://cdn.etrias.nl/media/cache/product_zoom/a/d/adidas-women-tokyo-off-white-collegiate-green-gold-metallic-jp9705.jpg" alt="Adidas NMD">
+              <div class="product-info">
+                <h3>Adidas NMD</h3>
+                <p>Lifestyle Shoes</p>
+                <span class="price">$139.99</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https://cdn.etrias.nl/media/cache/product_thumb_md/a/d/adidas-women-gazelle-bold-court-green-lucid-pink-pure-sulfur-jh9668.jpg" alt="Adidas 4DFWD">
+              <div class="product-info">
+                <h3>Adidas 4DFWD</h3>
+                <p>Performance Shoes</p>
+                <span class="price">$199.99</span>
+              </div>
+            </div>
+          </div>
+          <button class="slider-arrow next" id="nextAdidas">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Under Armour Section -->
+      <div class="brand-section">
+        <div class="brand-header">
+          <h2 class="section-title">Under Armour</h2>
+          <a href="./underarmour.html" class="view-all">View All</a>
+        </div>
+        <div class="product-slider">
+          <button class="slider-arrow prev" id="prevUA">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="product-track" id="uaTrack">
+            <div class="product-card">
+              <img src="https://underarmour.scene7.com/is/image/Underarmour/3027593-001_DEFAULT?rp=standard-30pad|pdpZoomDesktop&scl=0.50&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=850,850" alt="UA HOVR">
+              <div class="product-info">
+                <h3>UA HOVR</h3>
+                <p>Running Shoes</p>
+                <span class="price">$119.99</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https://underarmour.scene7.com/is/image/Underarmour/3027593-002_DEFAULT?rp=standard-30pad|pdpZoomDesktop&scl=0.50&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=850,850" alt="UA Training">
+              <div class="product-info">
+                <h3>UA Training</h3>
+                <p>Training Shoes</p>
+                <span class="price">$99.99</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https://underarmour.scene7.com/is/image/Underarmour/3027593-004_DEFAULT?rp=standard-30pad|pdpZoomDesktop&scl=0.50&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=850,850" alt="UA Project Rock">
+              <div class="product-info">
+                <h3>UA Project Rock</h3>
+                <p>Training Shoes</p>
+                <span class="price">$139.99</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https://underarmour.scene7.com/is/image/Underarmour/3027593-016_DEFAULT?rp=standard-30pad|pdpZoomDesktop&scl=0.50&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=850,850" alt="UA Charged">
+              <div class="product-info">
+                <h3>UA Charged</h3>
+                <p>Running Shoes</p>
+                <span class="price">$89.99</span>
+              </div>
+            </div>
+          </div>
+          <button class="slider-arrow next" id="nextUA">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-collection">
+    <div class="container">
+      <h2 class="section-title">Latest Drops</h2>
+      <div class="collection-slider">
+        <button class="slider-arrow prev" id="prevCollection">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="collection-track" id="collectionTrack">
+          <div class="collection-item">
+            <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&q=80&w=987" alt="Training Essentials">
+            <div class="collection-content">
+              <h3>Training Essentials</h3>
+              <p>Premium gear for every workout.</p>
+              <a href="#" class="btn">Explore</a>
+            </div>
+          </div>
+          <div class="collection-item">
+            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&q=80&w=1450" alt="Basketball Collection">
+            <div class="collection-content">
+              <h3>Crossfit Collection</h3>
+              <p>Engineered for the court.</p>
+              <a href="#" class="btn">Shop Now</a>
+            </div>
+          </div>
+          <div class="collection-item">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=1450" alt="Running Collection">
+            <div class="collection-content">
+              <h3>Fitness Collection</h3>
+              <p>Break your limits.</p>
+              <a href="#" class="btn">Shop Now</a>
+            </div>
+          </div>
+          <div class="collection-item">
+            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&q=80&w=1450" alt="Boxing Gear">
+            <div class="collection-content">
+              <h3>Football Collection</h3>
+              <p>Dominate the ring.</p>
+              <a href="#" class="btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <button class="slider-arrow next" id="nextCollection">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+          </div>
+          <h3>Free Shipping</h3>
+          <p>On orders over $150</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+          </div>
+          <h3>Secure Payment</h3>
+          <p>100% secure checkout</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 12 2 2 5-5"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3>Quality Guarantee</h3>
+          <p>30-day return policy</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>24/7 Support</h3>
+          <p>Here to help you</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">Running</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Basketball</a></li>
+            <li><a href="#">Football</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Nike. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
